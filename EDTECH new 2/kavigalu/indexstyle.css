@@ -1,0 +1,104 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    display: inline;
+  }
+  
+  .header-title .ed {
+    color: red;
+  }
+  
+  .header-title .tech {
+    background: linear-gradient(to right, darkblue, skyblue);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Search bar styling */
+  .search-bar {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .search-bar input {
+    padding: 12px;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button container styling */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+  }
+  
+  /* Button styling */
+  button.btn {
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Individual button colors */
+  button.english {
+    background-color: red; /* light red */
+  }
+  
+  button.kannada {
+    background-color: skyblue; /* yellow */
+  }
+  
+  button.hindi {
+    background-color: lightgreen; /* green */
+  }
+  
+  button.maths {
+    background-color: orange; /* orange */
+  }
+  
+  button.kavi {
+    background-color: rgb(97, 36, 144); /* pink */
+  }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdTech</title>
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+
+    <!-- LANGUAGE SWITCHER -->
+    <div class="language-switcher">
+        <button onclick="setLanguage('kn')">ಕನ್ನಡ</button>
+        <button onclick="setLanguage('en')">English</button>
+    </div>
+
+    <header>
+        <h1 class="header-title" id="title">
+            ಅಕ್ಷರ ಜ್ಯೋತಿ<br>Light Of Education
+        </h1>
+    </header>
+
+    <div class="buttons">
+
+        <a href="../kannada/kannada.html">
+            <button class="btn kannada" id="btn1">ಕನ್ನಡ ವ್ಯಾಕರಣ</button>
+        </a>
+
+        <a href="../english/english.html">
+            <button class="btn english" id="btn2">ಇಂಗ್ಲಿಷ್ ವ್ಯಾಕರಣ</button>
+        </a>
+
+        <a href="../hindi/hindi.html">
+            <button class="btn hindi" id="btn3">ಹಿಂದಿ ವ್ಯಾಕರಣ</button>
+        </a>
+
+        <a href="../maths/maths.html">
+            <button class="btn maths" id="btn4">ಗಣಿತ ಸೂತ್ರಗಳು</button>
+        </a>
+
+        <a href="../kavigalu/a.html">
+            <button class="btn kavi" id="btn5">ಕನ್ನಡ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ವಿಜೇತರು</button>
+        </a>
+
+        <a href="../tourist/tourist.html">
+            <button class="btn tourist" id="btn6">ಕರ್ನಾಟಕದ ಪ್ರವಾಸಿ ಸ್ಥಳಗಳು</button>
+        </a>
+
+        <a href="../personalities/personalities.html">
+            <button class="btn famous" id="btn7">ಕರ್ನಾಟಕದ ಪ್ರಸಿದ್ಧ ವ್ಯಕ್ತಿಗಳು</button>
+        </a>
+
+        <a href="../quiz/quiz.html">
+            <button class="btn quiz" id="btn8">Quiz & Puzzle</button>
+        </a>
+
+    </div>
+
+    <!-- LANGUAGE SWITCH SCRIPT -->
+    <script>
+        const text = {
+            kn: {
+                title: "ಅಕ್ಷರ ಜ್ಯೋತಿ<br>Light Of Education",
+                btn1: "ಕನ್ನಡ ವ್ಯಾಕರಣ",
+                btn2: "ಇಂಗ್ಲೀಷ್ ವ್ಯಾಕರಣ",
+                btn3: "ಹಿಂದಿ ವ್ಯಾಕರಣ",
+                btn4: "ಗಣಿತ ಸೂತ್ರಗಳು",
+                btn5: "ಕನ್ನಡ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ವಿಜೇತರು",
+                btn6: "ಪ್ರವಾಸಿ ಸ್ಥಳಗಳು",
+                btn7: "ಪ್ರಸಿದ್ಧ ವ್ಯಕ್ತಿಗಳು",
+                btn8: "ಪ್ರಶ್ನೋತ್ತರ & ಪಜಲ್"
+            },
+            en: {
+                title: "Akshara Jyothi<br>Light Of Education",
+                btn1: "Kannada Grammar",
+                btn2: "English Grammar",
+                btn3: "Hindi Grammar",
+                btn4: "Math Formulas",
+                btn5: "Kannada Jnanapeeta Award Winners",
+                btn6: "Tourist Places",
+                btn7: "Famous Personalities",
+                btn8: "Quiz & Puzzle"
+            }
+        };
+
+        function setLanguage(lang) {
+            document.getElementById("title").innerHTML = text[lang].title;
+            document.getElementById("btn1").innerText = text[lang].btn1;
+            document.getElementById("btn2").innerText = text[lang].btn2;
+            document.getElementById("btn3").innerText = text[lang].btn3;
+            document.getElementById("btn4").innerText = text[lang].btn4;
+            document.getElementById("btn5").innerText = text[lang].btn5;
+            document.getElementById("btn6").innerText = text[lang].btn6;
+            document.getElementById("btn7").innerText = text[lang].btn7;
+            document.getElementById("btn8").innerText = text[lang].btn8;
+        }
+    </script>
+
+</body>
+</html>

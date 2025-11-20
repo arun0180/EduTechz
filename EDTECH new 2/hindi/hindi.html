@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हिंदी व्याकरण</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #FF5733;
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+
+        .topics {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .topics button {
+            font-size: 18px;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            transition: transform 0.2s;
+        }
+
+        .topics button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Different colors for each button */
+        .btn-sangya { background-color: #e74c3c; }
+        .btn-sarvanam { background-color: #3498db; }
+        .btn-kriya { background-color: #f39c12; }
+        .btn-visheshan { background-color: #9b59b6; }
+        .btn-avyay { background-color: #1abc9c; }
+        .btn-vachya { background-color: #34495e; }
+        .btn-samvad { background-color: #e67e22; }
+        .btn-sandhi { background-color: #7d3c98; }
+        .btn-vakya { background-color: #2e86c1; }
+
+        .content {
+            display: none;
+            margin: 20px;
+            text-align: left;
+            font-size: 18px;
+            color: #333;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function showContent(topic) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('active'));
+            document.getElementById(topic).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        हिंदी व्याकरण
+    </header>
+
+    <div class="topics">
+        <button class="btn-sangya" onclick="showContent('sangya')">संज्ञा</button>
+        <button class="btn-sarvanam" onclick="showContent('sarvanam')">सर्वनाम</button>
+        <button class="btn-kriya" onclick="showContent('kriya')">क्रिया</button>
+        <button class="btn-visheshan" onclick="showContent('visheshan')">विशेषण</button>
+        <button class="btn-avyay" onclick="showContent('avyay')">अव्यय</button>
+        <button class="btn-vachya" onclick="showContent('vachya')">वाच्य</button>
+        <button class="btn-samvad" onclick="showContent('samvad')">संवाद</button>
+        <button class="btn-sandhi" onclick="showContent('sandhi')">संधि</button>
+        <button class="btn-vakya" onclick="showContent('vakya')">वाक्य</button>
+    </div>
+
+    <div id="sangya" class="content">
+        <h2>संज्ञा</h2>
+        <p>संज्ञा वह शब्द है जो किसी व्यक्ति, स्थान, वस्तु या भाव का बोध कराता है। उदाहरण: राम, दिल्ली, पुस्तक।</p>
+    </div>
+
+    <div id="sarvanam" class="content">
+        <h2>सर्वनाम</h2>
+        <p>सर्वनाम वह शब्द है जो संज्ञा के स्थान पर प्रयोग होता है। उदाहरण: वह, यह, आप।</p>
+    </div>
+
+    <div id="kriya" class="content">
+        <h2>क्रिया</h2>
+        <p>क्रिया वह शब्द है जो किसी कार्य या अवस्था का बोध कराता है। उदाहरण: दौड़ना, पढ़ना।</p>
+    </div>
+
+    <div id="visheshan" class="content">
+        <h2>विशेषण</h2>
+        <p>विशेषण वह शब्द है जो संज्ञा या सर्वनाम की विशेषता बताता है। उदाहरण: सुन्दर, बड़ा।</p>
+    </div>
+
+    <div id="avyay" class="content">
+        <h2>अव्यय</h2>
+        <p>अव्यय ऐसे शब्द हैं जो अपरिवर्तनीय होते हैं और वाक्य में विशेष कार्य करते हैं। उदाहरण: ही, भी।</p>
+    </div>
+
+    <div id="vachya" class="content">
+        <h2>वाच्य</h2>
+        <p>वाच्य वह होता है जो वाक्य में कर्ता, कर्म और क्रिया के सम्बन्ध को व्यक्त करता है।</p>
+    </div>
+
+    <div id="samvad" class="content">
+        <h2>संवाद</h2>
+        <p>संवाद दो या अधिक व्यक्तियों के बीच हुई बातचीत को कहते हैं।</p>
+    </div>
+
+    <div id="sandhi" class="content">
+        <h2>संधि</h2>
+        <p>संधि दो शब्दों के मेल से बनने वाले नए शब्द को कहते हैं।</p>
+    </div>
+
+    <div id="vakya" class="content">
+        <h2>वाक्य</h2>
+        <p>शब्दों का ऐसा समूह जो एक पूरा अर्थ प्रकट करे, उसे वाक्य कहते हैं।</p>
+    </div>
+</body>
+</html>
