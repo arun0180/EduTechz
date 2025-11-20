@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Grammar Topics</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+
+        .topics {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .topics button {
+            font-size: 18px;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            transition: transform 0.2s;
+        }
+
+        .topics button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Different colors for each button */
+        .btn-nouns { background-color: #e74c3c; }
+        .btn-pronouns { background-color: #3498db; }
+        .btn-verbs { background-color: #f39c12; }
+        .btn-adjectives { background-color: #9b59b6; }
+        .btn-adverbs { background-color: #1abc9c; }
+        .btn-prepositions { background-color: #34495e; }
+        .btn-conjunctions { background-color: #e67e22; }
+        .btn-interjections { background-color: #7d3c98; }
+        .btn-tenses { background-color: #2e86c1; }
+
+        .content {
+            display: none;
+            margin: 20px;
+            text-align: left;
+            font-size: 18px;
+            color: #333;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function showContent(topic) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('active'));
+            document.getElementById(topic).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        English Grammar
+    </header>
+
+    <div class="topics">
+        <button class="btn-nouns" onclick="showContent('nouns')">Parts of Speech</button>
+        <button class="btn-pronouns" onclick="showContent('pronouns')">Sentence Structure</button>
+        <button class="btn-adjectives" onclick="showContent('adjectives')">Singular and Plural</button>
+        <button class="btn-prepositions" onclick="showContent('prepositions')">Articles (A, An, The)</button>
+        <button class="btn-conjunctions" onclick="showContent('conjunctions')">Capitalization</button>
+        <button class="btn-interjections" onclick="showContent('interjections')">Word Order</button>
+        <button class="btn-tenses" onclick="showContent('tenses')">Tenses</button>
+        <button class="btn-verbs" onclick="showContent('verbs')">Punctuation</button>
+        <button class="btn-adverbs" onclick="showContent('adverbs')">Basic Questions</button>
+
+    </div>
+
+    <div id="nouns" class="content">
+        <h2><b>Parts of Speech</b></h2>
+        <p>Nouns: Teach that nouns are names of people, places, things, or animals.<br>
+            Example: "Cat, house, Mary."<br>
+            <br>
+            Verbs: Actions or states of being.<br>
+            Example: "Run, jump, is, are."<br>
+            <br>
+            Adjectives: Describe nouns.<br>
+            Example: "Big, red, happy."<br>
+            <br>
+            Adverbs: Describe verbs, adjectives, or other adverbs.<br>
+            Example: "Quickly, very, often."<br>
+            <br>
+            Pronouns: Words that replace nouns.<br>
+            Example: "He, she, it, they."</p>
+    </div>
+
+    <div id="pronouns" class="content">
+        <h2><b>Sentence Structure</b></h2>
+        <p>Subject: The person or thing doing the action.<br>
+            Example: "The dog (subject) barks."<br>
+            <br>
+            Predicate: The action or description.<br>
+            Example: "The dog barks loudly (predicate)."<br>
+            <br>
+            Articles: "A," "an," and "the" are used with nouns.<br>
+            Example: "A cat, an apple, the sun."</p>
+    </div>
+
+    <div id="verbs" class="content">
+        <h2>Punctuation</h2>
+        <p>Capital letters: Start sentences or proper nouns.<br>
+            <br>
+            Full stop/Period (.): End a sentence.<br>
+            <br>
+            Comma (,): Separate items in a list.<br>
+            <br>
+            Question mark (?): End a question.<br>
+            <br>
+            Exclamation mark (!): Show excitement or strong emotion.</p>
+    </div>
+
+    <div id="adjectives" class="content">
+        <h2>Singular and Plural</h2>
+        <p>Singular: One object/person.<br>
+            Example: "Apple."<br>
+            <br>
+            Plural: More than one.<br>
+            Example: "Apples." Rules:<br>
+            <br>
+            Add -s (cat → cats).<br>
+            Add -es (bus → buses).<br>
+            Irregular: Child → children.</p>
+    </div>
+
+    <div id="adverbs" class="content">
+        <h2>Basic Questions</h2>
+        <p>Who, what, where, when, why, how.<br>
+            <br>
+            Example: "Where is the dog?"</p>
+    </div>
+
+    <div id="prepositions" class="content">
+        <h2>Articles (A, An, The)</h2>
+        <p>"A" for singular nouns starting with consonants.<br>
+            "An" for singular nouns starting with vowels.<br>
+            "The" for specific nouns.</p>
+    </div>
+
+    <div id="conjunctions" class="content">
+        <h2>Capitalization</h2>
+        <p>Capitalize:<br>
+            The first word in a sentence.<br>
+            <br>
+            Names of people, places, days, months.<br>
+            <br>
+            Example: "We went to Paris on Monday."</p>
+    </div>
+
+    <div id="interjections" class="content">
+        <h2>Word Order</h2>
+        <p>Subject → Verb → Object<br>
+            <br>
+            Example: "The dog (subject) chased (verb) the ball (object)."</p>
+    </div>
+
+    <div id="tenses" class="content">
+        <h2>Tenses</h2>
+        <p>Past: "I played."<br>
+            <br>
+            Present: "I play."<br>
+            <br>
+            Future: "I will play."p>
+    </div>
+</body>
+</html>
