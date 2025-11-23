@@ -54,6 +54,17 @@ This project supports **Kannada** and **English**, with subject-wise navigation 
 ├── /tourist
 ├── /personalities
 └── /kavigalu
-```markdown
-![Homepage Screenshot](Edtech1.png)
 
+
+![Homepage](https://raw.githubusercontent.com/arun0180/EduTechz/main/Edtech_Images/Edtech2.png
+)
+![Homepage](https://raw.githubusercontent.com/arun0180/EduTechz/main/Edtech_Images/Edtech3.png
+)
+![Homepage](https://raw.githubusercontent.com/arun0180/EduTechz/main/Edtech_Images/Edtech4.png
+)
+![Homepage](https://raw.githubusercontent.com/arun0180/EduTechz/main/Edtech_Images/Edtech5.png
+)
+![Homepage](https://raw.githubusercontent.com/arun0180/EduTechz/main/Edtech_Images/Edtech6.png
+)
+![Homepage](https://raw.githubusercontent.com/arun0180/EduTechz/main/Edtech_Images/Edtech7.png
+)
