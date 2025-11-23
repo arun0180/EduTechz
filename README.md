@@ -7,6 +7,8 @@ This project supports **Kannada** and **English**, with subject-wise navigation 
 # Live Demo  
 👉 **GitHub Pages Link:** *https://arun0180.github.io/EduTechz/*
 
+![Homepage](https://raw.githubusercontent.com/arun0180/LightOfEducation/main/Edtech1.png)
+
 ---
 
 # Features
