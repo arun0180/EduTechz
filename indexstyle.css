@@ -98,7 +98,8 @@ button.kavi { background: rgb(97, 36, 144); }
 
 /* NEW COLORS FOR LAST 3 BUTTONS */
 button.tourist { background-color: #007bff; }   /* Blue */
-button.famous { background-color: #6A0DAD; }    /* Orange/Red */
+
+/* ⭐ UPDATED: NEW COLOR FOR FAMOUS PERSONALITIES */
+button.famous { background-color: #6A0DAD; }    /* Royal Purple */
+
 button.quiz { background-color: #009688; }      /* Teal */
-
-
