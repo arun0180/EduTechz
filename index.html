@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ಅಕ್ಷರ ಜ್ಯೋತಿ | Light of Education</title>
   <link rel="stylesheet" href="indexstyle.css">
-  <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -48,7 +47,6 @@
       <button class="btn tourist" data-lang="tourist_btn">ಪ್ರವಾಸಿ ಸ್ಥಳಗಳು</button>
     </a>
 
-    <!-- ⭐ FIXED CLASS NAME -->
     <a href="personalities/personalities.html">
       <button class="btn personal" data-lang="personal_btn">ಕರ್ನಾಟಕದ ಪ್ರಸಿದ್ಧ ವ್ಯಕ್ತಿಗಳು</button>
     </a>
@@ -58,6 +56,48 @@
     </a>
 
   </div>
+
+  <!-- ⭐ LANGUAGE SCRIPT ADDED HERE (NO .js FILE NEEDED) -->
+  <script>
+    const langData = {
+      en: {
+        title_kn: "Akshara Jyothi",
+        title_en: "Light Of Education",
+
+        kannada_btn: "Kannada Grammar",
+        english_btn: "English Grammar",
+        hindi_btn: "Hindi Grammar",
+        maths_btn: "Maths Formulas",
+        quiz_btn: "Quiz & Puzzle",
+        tourist_btn: "Tourist Places",
+        personal_btn: "Famous Personalities of Karnataka",
+        kavi_btn: "Kannada Jnanapeeta Award Winners"
+      },
+
+      kn: {
+        title_kn: "ಅಕ್ಷರ ಜ್ಯೋತಿ",
+        title_en: "Light Of Education",
+
+        kannada_btn: "ಕನ್ನಡ ವ್ಯಾಕರಣ",
+        english_btn: "ಇಂಗ್ಲೀಷ್ ವ್ಯಾಕರಣ",
+        hindi_btn: "ಹಿಂದಿ ವ್ಯಾಕರಣ",
+        maths_btn: "ಗಣಿತ ಸೂತ್ರಗಳು",
+        quiz_btn: "ಕ್ವಿಜ್ ಮತ್ತು ಪಝಲ್",
+        tourist_btn: "ಪ್ರವಾಸಿ ಸ್ಥಳಗಳು",
+        personal_btn: "ಕರ್ನಾಟಕದ ಪ್ರಸಿದ್ದ ವ್ಯಕ್ತಿಗಳು",
+        kavi_btn: "ಕನ್ನಡ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ವಿಜೇತರು"
+      }
+    };
+
+    function changeLanguage(lang) {
+      document.querySelectorAll("[data-lang]").forEach(el => {
+        const key = el.getAttribute("data-lang");
+        if (langData[lang][key]) {
+          el.textContent = langData[lang][key];
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
