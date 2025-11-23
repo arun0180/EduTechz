@@ -52,5 +52,5 @@ This project supports **Kannada** and **English**, with subject-wise navigation 
 ├── /personalities
 └── /kavigalu
 ```markdown
-![Homepage Screenshot](Edtech1.jpg)
+![Homepage Screenshot](Edtech1.png)
 
